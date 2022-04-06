@@ -3,8 +3,11 @@ Rename package details
 
 ## How to run the file
 Step 1: Pull the code on your local
+
 Step 2: Copy and paste the images folder into this project (relative to ./file-rename.js)
+
 Step 3: run the following commands 
+
 
   ```
     $ npm install
