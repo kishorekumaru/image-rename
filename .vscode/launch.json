@@ -4,12 +4,18 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Program",
+            "sourceMaps": true,
             "skipFiles": [
-                "<node_internals>/**"
+                "<node_internals>/**",
+                "**/$KNOWN_TOOLS$ /**",
+                "!**/node_modules/mocha /**", 
+                "**/node_modules**",
+                "**/node_modules/my-cool-test-runner/**"
             ],
             "program": "${workspaceFolder}/file-rename.js"
         }
